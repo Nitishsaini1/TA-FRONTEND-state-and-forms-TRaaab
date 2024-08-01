@@ -1,0 +1,434 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1350px;
+  margin: 4rem auto;
+  position: relative;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.align-center {
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.flex-10 {
+  flex: 0 1 10%;
+}
+
+.flex-15 {
+  flex: 0 1 15%;
+}
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+
+.flex-85 {
+  flex: 0 1 80%;
+}
+.header {
+  margin-bottom: 3rem;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 2rem;
+}
+strong {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.card {
+  padding: 1rem;
+  margin-bottom: 5rem;
+  margin-right: 5rem;
+  position: relative;
+  box-shadow: 5px 5px 12px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.img-box {
+  width: 15rem;
+}
+.img-box img {
+  width: 100%;
+}
+.card .btn {
+  border: none;
+  padding: 0.8rem 2rem;
+  background-color: black;
+  color: white;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.card .hr {
+  width: 12%;
+  border: none;
+  border-top: 2px solid goldenrod;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.card:hover .btn {
+  background-color: goldenrod;
+}
+p {
+  margin-top: 1rem;
+}
+.card span {
+  font-size: 0.8rem;
+  color: grey;
+}
+.tag {
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.3rem;
+}
+
+.size {
+  font-size: 0.8rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  background-color: rgb(230, 230, 230);
+  height: 2.5rem;
+  width: 2.5rem;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  padding-top: 0.7rem;
+}
+
+.size:hover {
+  background-color: black;
+  color: white;
+}
+.active {
+  background-color: black;
+  color: white;
+}
+.cart {
+  background-color: #1b1a20;
+  width: 33%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 2rem;
+}
+.cart-product {
+  padding: 1rem;
+  padding-top: 0;
+  height: 60vh;
+  overflow-y: scroll;
+}
+.cart-product span {
+  color: white;
+}
+.cart-product p {
+  color: grey;
+  margin-top: 0;
+}
+.cart-product img {
+  width: 5rem;
+  margin-right: 1rem;
+}
+.cart-product li {
+  position: relative;
+  padding: 1rem 0;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+.cart .cart-product-price {
+  color: goldenrod;
+  margin-right: 0.3rem;
+}
+.cart hr {
+  border: none;
+  border-top: 2px solid rgba(0, 0, 0, 0.8);
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.checkout {
+  padding: 1rem;
+  background-color: #1b1a20;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+.checkout p {
+  color: grey;
+  margin: 0;
+  font-size: 1rem;
+}
+.checkout strong {
+  color: goldenrod;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.checkout .btn-secondary {
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  background-color: darkgoldenrod;
+  color: white;
+}
+.close-cart,
+.open-cart {
+  background-color: #1b1a20;
+  color: white;
+  height: 3rem;
+  width: 3rem;
+  position: fixed;
+  top: 0;
+  right: 33%;
+  text-align: center;
+  line-height: 3;
+  cursor: pointer;
+}
+.close-cart:hover {
+  background-color: black;
+}
+.close-cart {
+  right: 0;
+  padding: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+.cart-icon {
+  position: relative;
+}
+.yellow-circle {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: gold;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.3;
+  font-size: 0.8rem;
+  position: fixed;
+  right: 17.5%;
+  top: 8%;
+}
+select {
+  padding: 0.5rem;
+  margin-left: 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+.close-btn {
+  color: rgb(255, 255, 255, 0.5);
+  text-align: right;
+  position: absolute;
+  top: 7%;
+  right: 6%;
+  cursor: pointer;
+}
+.close-btn:hover {
+  font-size: 1.3rem;
+  color: rgba(248, 87, 87, 0.5);
+}
+
+/* Login Page  */
+
+form {
+  width: 30%;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.1);
+}
+.form-control {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.5rem;
+}
+.login-btn {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.google {
+  width: 20%;
+  margin: 2rem 0;
+  font-size: 1rem;
+}
+.or {
+  color: grey;
+}
+.login button:hover {
+  background-color: darkgoldenrod;
+}
+.login button {
+  border-radius: 4px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
